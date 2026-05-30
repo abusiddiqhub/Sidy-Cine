@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body {
+  background-color: #3a0808;
+  color: white;
+}
+
+.header {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: black;
+}
+
+.header h1 {
+  color: rgb(174, 30, 30);
+}
+
+.nav-links ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links li {
+  cursor: pointer;
+}
+
+.nav-links li:hover {
+  color: red;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: #ccc;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.card { 
+    width: 250px;
+    height: 150px;
+    border-radius: 12px;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.card:nth-child(1) {
+    background-image: url('image/Ajith.webp');
+}
+
+.card:nth-child(2) {
+    background-image: url('image/lio.jpg');
+}
+
+.card:nth-child(3) {
+    background-image: url('image/Shahid-Kapoor.avif');
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+.movie-section {
+  padding: 40px;
+}
+
+.movie-section h2 {
+  margin-bottom: 20px;
+  color: rgb(255, 239, 239);
+}
+.movies {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 200px;
+  background-color: #000000;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  transition: 0.3s;
+  cursor: pointer;
+ 
+}
+
+.box img {
+  width: 100%;
+  height: 270px;
+  border-radius: 8px;
+
+}
+           
+.box:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 10px 20px rgba(207, 23, 3, 0.93);
+}
+                    
+.rating {
+  display: inline-block;
+  margin: 8px 0;
+  background: yellow;
+  color: black;
+  padding: 3px 8px;
+  border-radius: 5px;
+}
+
+.rating-button {
+  display: inline-block;
+  margin-top: 5px;
+  padding: 5px 10px;
+  background-color: red;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.rating-button:hover {
+  background-color: #ff1a1a;
+  transform: scale(1.1);
+}
+.box {
+    position: relative;
+}
+
