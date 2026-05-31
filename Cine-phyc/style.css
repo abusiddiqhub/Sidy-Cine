@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body {
+  background: linear-gradient(to right, #dadada, #141414);
+  color: white;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 45px 90px;
+  background: url(image/gk.jpg  ) center/cover no-repeat;
+}
+.header h1 {
+  color: linear-gradient(to right, #dadada, #141414);
+}
+
+.nav-links ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links li {
+  cursor: pointer;
+}
+
+.nav-links li:hover {
+  color: rgb(218, 218, 218);
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  
+  
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: #000000;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.card { 
+    width: 250px;
+    height: 150px;
+    border-radius: 12px;
+    color: rgb(217, 217, 217);
+    display: flex;
+    align-items: flex-end;
+    padding: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    background-size: cover;
+    background-position: center;
+      position: relative;
+    overflow: hidden;
+    
+}
+/* .card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+} */
+
+
+.card:nth-child(1) {
+    background-image: url('image/Ajith.webp');
+}
+
+.card:nth-child(2) {
+    background-image: url('image/lio.jpg');
+}
+
+.card:nth-child(3) {
+    background-image: url('image/Shahid-Kapoor.avif');
+}
+
+.card:hover {
+    transform: scale(1.05);
+     box-shadow: 0 10px 20px rgb(0, 0, 0);
+}
+.movie-section {
+  padding: 60px 50px;
+}
+
+.movie-section h2 {
+  margin-bottom: 20px;
+  color: rgb(0, 0, 0);
+}
+.movies {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 200px;
+    background: #111;
+  border: 1px solid rgba(255,255,255,0.05);
+  padding: 10px;
+  text-align: center;
+  transition: 0.3s;
+  cursor: pointer;
+ 
+}
+
+.box img {
+  width: 100%;
+  height: 270px;
+  border-radius: 8px;
+
+}
+           
+.box:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 10px 20px rgb(0, 0, 0);
+}
+                    
+.rating {
+  display: inline-block;
+  margin: 8px 0;
+  background: yellow;
+  color: black;
+  padding: 3px 8px;
+  border-radius: 5px;
+}
+
+.rating-button {
+  display: inline-block;
+  margin-top: 5px;
+  padding: 5px 10px;
+  background-color: red;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.3s;
+  box-shadow: 0 0 10px rgba(255,0,0,0.5);
+}
+
+.rating-button:hover {
+  background-color: #ff1a1a;
+  transform: scale(1.1);
+}
+.box {
+    position: relative;
+}
+html {
+  scroll-behavior: smooth;
+}
